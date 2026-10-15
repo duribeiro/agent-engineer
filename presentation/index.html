@@ -1,0 +1,339 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agent Engineer · Semana da Tecnologia UNASP</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"><style>*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;height:100%;overflow:hidden}
+#stage{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
+.deck{position:relative;width:1920px;height:1080px;flex-shrink:0;transform-origin:center center}
+.deck section{position:absolute;left:0;top:0;width:1920px;height:1080px;overflow:hidden;font-family:Inter,Arial,sans-serif;opacity:0;pointer-events:none;transition:opacity .35s}
+.deck section.on{opacity:1;pointer-events:auto}
+section > :not([style*="position:absolute"]):not([style*="position: absolute"]){position:relative}
+section aside{display:none}
+section img{display:block}
+section i[data-lucide],section svg.lucide{display:inline-block;flex-shrink:0}
+section table{border-collapse:separate;border-spacing:0;overflow:hidden}
+section th,section td{padding:24px 36px;text-align:left}
+section th{font-weight:700;border-bottom:1px solid #d5e5dc}
+#bar{position:fixed;bottom:12px;right:16px;color:#888;font:14px Inter,Arial,sans-serif;opacity:0;transition:opacity .3s}
+body:hover #bar{opacity:.8}
+#bar a{color:#aaa;margin-left:12px}
+@media print{
+@page{size:1920px 1080px;margin:0}
+html,body{height:auto;overflow:visible;background:none}
+#stage{position:static;display:block}
+.deck{transform:none!important;width:1920px;height:auto}
+.deck section{position:relative;opacity:1;break-after:page;transition:none}
+#bar{display:none}
+}
+</style></head><body><div id="stage"><div class="deck"><section id="cover" data-transition="fade" style="display:flex; flex-direction:column; justify-content:space-between; padding:128px; background:#111111">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+  <div style="display:flex; flex-direction:row; justify-content:space-between">
+    <p style="font-family:Inter, Arial, sans-serif; font-size:24px; color:#a3a3a0">Semana da Tecnologia · UNASP 2026</p>
+    <p style="font-family:Inter, Arial, sans-serif; font-size:24px; color:#a3a3a0">ADS</p>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:32px">
+    <h1 style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:200px; font-weight:700; line-height:0.95; letter-spacing:-6px; color:#f2f2f0; background:linear-gradient(90deg, #f2f2f0 0%, #2dd4bf 100%); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent">Agent Engineer</h1>
+    <p style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:48px; line-height:1.25; color:#c9c9c4">Uma esteira de construção de software com agentes de IA</p>
+  </div>
+  <p style="font-family:Inter, Arial, sans-serif; font-size:26px; color:#a3a3a0">Eduardo Ribeiro</p>
+  <aside>Este é o Agent Engineer: uma esteira de construção de software. Em vez de pedir um app num prompt só, os agentes de IA seguem a engenharia de software que aprendemos no curso, etapa por etapa. Eu sou o Eduardo, de ADS.</aside>
+</section>
+<section id="problema" data-transition="fade" style="display:flex; flex-direction:column; gap:56px; padding:128px; background:#111111">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+  <div style="display:flex; flex-direction:column; gap:20px">
+    <p style="font-family:Inter, Arial, sans-serif; font-size:26px; color:#2dd4bf">O problema</p>
+    <h2 style="width:1500px; font-family:'IBM Plex Sans', Arial, sans-serif; font-size:76px; font-weight:700; line-height:1.08; letter-spacing:-2px; color:#f2f2f0">Quem não é programador pede um site para a IA e recebe código que não sabe avaliar.</h2>
+  </div>
+  <p style="width:900px; padding:28px 36px; font-family:'IBM Plex Mono', 'Courier New', monospace; font-size:36px; color:#e6e6e2; background:#1d1d1d; border:1px solid #2e2e2e; border-radius:12px">&gt; "cria um site de vendas pra mim"</p>
+  <div style="display:flex; flex-direction:row; gap:24px">
+    <p style="padding:16px 32px; font-family:'IBM Plex Sans', Arial, sans-serif; font-size:32px; font-weight:600; color:#ffb4a8; background:#2a1715; border:1px solid #5c2b26; border-radius:256px">Sem requisitos</p>
+    <p style="padding:16px 32px; font-family:'IBM Plex Sans', Arial, sans-serif; font-size:32px; font-weight:600; color:#ffb4a8; background:#2a1715; border:1px solid #5c2b26; border-radius:256px">Sem segurança</p>
+    <p style="padding:16px 32px; font-family:'IBM Plex Sans', Arial, sans-serif; font-size:32px; font-weight:600; color:#ffb4a8; background:#2a1715; border:1px solid #5c2b26; border-radius:256px">Sem registro das decisões</p>
+  </div>
+  <aside>Hoje, quem não é programador pede um site para a IA e recebe código em minutos. Só que não sabe avaliar: não tem requisito escrito, não tem cuidado com segurança e ninguém sabe por que cada escolha foi feita. Quando dá problema, não tem por onde começar.</aside>
+</section>
+<section id="publico" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:64px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Para quem</p>
+<h2 style="font-size:72px;font-weight:700;line-height:1.1;letter-spacing:-2px">Quem tem a ideia, mas não é engenheiro</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:40px">
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#1d1d1d;padding:48px;border:1px solid #2e2e2e;border-radius:16px">
+<i data-lucide="lightbulb" style="color:#2dd4bf;width:60px;height:60px"></i>
+<h3 style="font-size:40px;font-weight:700">Tem uma ideia</h3>
+<p style="font-size:30px;line-height:1.4;color:#a3a3a0">Empreendedor, professor, profissional de outra área.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#1d1d1d;padding:48px;border:1px solid #2e2e2e;border-radius:16px">
+<i data-lucide="message-circle" style="color:#2dd4bf;width:60px;height:60px"></i>
+<h3 style="font-size:40px;font-weight:700">Valida conversando</h3>
+<p style="font-size:30px;line-height:1.4;color:#a3a3a0">Responde perguntas e aprova telas. Sem ler código.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px;background:#1d1d1d;padding:48px;border:1px solid #2e2e2e;border-radius:16px">
+<i data-lucide="lock" style="color:#2dd4bf;width:60px;height:60px"></i>
+<h3 style="font-size:40px;font-weight:700">Recebe algo seguro</h3>
+<p style="font-size:30px;line-height:1.4;color:#a3a3a0">Segurança, testes e revisão já vêm na esteira.</p>
+</div>
+</div>
+<aside>É para quem tem a ideia mas não é engenheiro: um empreendedor, um professor, alguém de outra área. A pessoa valida tudo conversando e vendo as telas, sem ler código, e recebe um sistema de qualidade e seguro.</aside>
+</section>
+<section id="mapa" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:56px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Como funciona</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">9 etapas. Código só no final.</h2>
+</div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px">
+<div style="flex:1;display:flex;flex-direction:column;gap:28px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Entender</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="lightbulb" style="color:#2dd4bf;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Problema</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="users" style="color:#2dd4bf;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Jornadas</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="check" style="color:#2dd4bf;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">MVP</p></div>
+</div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:48px;height:24px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Desenhar</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="search" style="color:#2dd4bf;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Wireframe</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="book-open" style="color:#2dd4bf;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Requisitos</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="database" style="color:#2dd4bf;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Arquitetura</p></div>
+</div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:48px;height:24px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;gap:28px;background:#f2f2f0;color:#111111;border-radius:16px;padding:36px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#55554f">Construir</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="code" style="color:#111111;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Código</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="circle-check" style="color:#111111;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Testes</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px"><i data-lucide="send" style="color:#111111;width:48px;height:48px"></i><p style="font-size:32px;font-weight:600">Entrega</p></div>
+</div>
+</div>
+<aside>A esteira tem nove etapas em três fases. Primeiro entender: problema, jornadas e o corte do MVP. Depois desenhar: wireframe, requisitos e arquitetura. Só na terceira fase os agentes escrevem código, testam e entregam. Vou mostrar cada etapa com um exemplo real: a loja subsfor.me, construída com a esteira.</aside>
+</section>
+<section id="e1" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Etapa 01 · Problema e visão</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">O agente entrevista</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:28px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:20px;padding:44px 48px">
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px">
+<i data-lucide="message-circle" style="color:#2dd4bf;width:44px;height:44px"></i>
+<p style="font-size:34px;line-height:1.35;background:#2a2a28;border-radius:16px;padding:20px 28px">Que problema esse app resolve, e na vida de quem?</p>
+</div>
+<div style="display:flex;flex-direction:row;justify-content:end">
+<p style="font-size:34px;line-height:1.35;color:#111111;background:#f2f2f0;border-radius:16px;padding:20px 28px;width:1100px">Quem trabalha com IA assina várias ferramentas e paga o preço cheio em todas.</p>
+</div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:16px">
+<i data-lucide="circle-check" style="color:#7bd88f;width:40px;height:40px"></i>
+<p style="font-family:Inter, Arial, sans-serif;font-size:28px;color:#c9c9c4">visao.md gerado e confirmado</p>
+</div>
+</div>
+<aside>Etapa um. O agente entrevista a pessoa com perguntas simples. Esta é uma pergunta real do roteiro: que problema esse app resolve, e na vida de quem? E esta foi a minha resposta para a subsfor.me. Dali sai a visão do produto, que a pessoa confirma antes de seguir.</aside>
+</section>
+<section id="e2" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:56px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Etapa 02 · Jornadas</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">O caminho de quem usa</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Cliente</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:16px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 16px"><i data-lucide="search" style="color:#2dd4bf;width:52px;height:52px"></i><p style="font-size:28px;font-weight:600;text-align:center">Escolhe</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 16px"><i data-lucide="key-round" style="color:#2dd4bf;width:52px;height:52px"></i><p style="font-size:28px;font-weight:600;text-align:center">Cria conta</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 16px"><i data-lucide="lock" style="color:#2dd4bf;width:52px;height:52px"></i><p style="font-size:28px;font-weight:600;text-align:center">Paga</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:14px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:28px 16px"><i data-lucide="zap" style="color:#2dd4bf;width:52px;height:52px"></i><p style="font-size:28px;font-weight:600;text-align:center">Recebe na hora</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Sistema, por trás</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:16px">
+<p style="flex:1;font-size:28px;text-align:center;background:#181818;border:1px dashed #3a3a37;border-radius:16px;padding:22px">Confere o pagamento</p>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<p style="flex:1;font-size:28px;text-align:center;background:#181818;border:1px dashed #3a3a37;border-radius:16px;padding:22px">Pede a licença</p>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<p style="flex:1;font-size:28px;text-align:center;background:#181818;border:1px dashed #3a3a37;border-radius:16px;padding:22px">Entrega e guarda</p>
+</div>
+</div>
+<aside>Etapa dois: as jornadas. O agente desenha o caminho de quem usa. Na subsfor.me, o cliente escolhe, cria conta, paga e recebe na hora. E por trás, o sistema confere o pagamento, pede a licença e entrega. Foram catorze jornadas na primeira versão.</aside>
+</section>
+<section id="e3" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:56px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Etapa 03 · Corte do MVP</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">O que entra primeiro</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px">
+<div style="display:flex;flex-direction:row;align-items:center;gap:14px"><i data-lucide="circle-check" style="color:#7bd88f;width:44px;height:44px"></i><h3 style="font-size:36px;font-weight:700">Agora</h3></div>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Vitrine</p>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Conta e login</p>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Pagamento</p>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Entrega na hora</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px">
+<div style="display:flex;flex-direction:row;align-items:center;gap:14px"><i data-lucide="clock" style="color:#2dd4bf;width:44px;height:44px"></i><h3 style="font-size:36px;font-weight:700">Depois</h3></div>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Influenciadores</p>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Cupom</p>
+<p style="font-size:28px;background:#2a2a28;border-radius:999px;padding:10px 22px">Comparar ferramentas</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:18px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px">
+<div style="display:flex;flex-direction:row;align-items:center;gap:14px"><i data-lucide="lock" style="color:#ffb4a8;width:44px;height:44px"></i><h3 style="font-size:36px;font-weight:700">Nunca</h3></div>
+<p style="font-size:28px;background:#2a1715;color:#ffd2cb;border-radius:999px;padding:10px 22px">Campo de cartão próprio</p>
+<p style="font-size:28px;background:#2a1715;color:#ffd2cb;border-radius:999px;padding:10px 22px">Custo do fornecedor visível</p>
+</div>
+</div>
+<aside>Etapa três: o corte do MVP. O agente separa o que entra agora, o que fica para depois e o que nunca entra. Repare no "nunca": campo de cartão próprio e custo do fornecedor visível. A segurança já aparece aqui. O critério de pronto da subsfor.me foi comprar na loja no ar, com dinheiro de verdade, e receber o acesso.</aside>
+</section>
+<section id="e4a" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:40px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Etapa 04 · Wireframe em baixa fidelidade</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">Primeiro a estrutura, em cinza</h2>
+</div>
+<p style="width:520px;font-size:28px;line-height:1.4;color:#a3a3a0">Cada tela aprovada antes do código. 18 telas no subsfor.me.</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<img src="img/fig-lofi-hero.jpg" alt="Wireframe em baixa fidelidade do topo da loja no Figma" data-crop="1 50% 0%" style="width:796px;height:472px;object-fit:cover;border-radius:12px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Topo da vitrine</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:12px">
+<img src="img/fig-lofi-card.jpg" alt="Card de produto em três estados: à venda, esgotado e em breve" style="width:784px;height:472px;object-fit:cover;border-radius:12px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Card de produto: à venda, esgotado, em breve</p>
+</div>
+</div>
+<aside>Etapa quatro, o wireframe. Primeiro em baixa fidelidade, em cinza, só a estrutura. Aqui é o Figma real da subsfor.me: o topo da vitrine e o card de produto com os três estados, à venda, esgotado e em breve. Cada tela é aprovada antes de existir código. Foram dezoito telas.</aside>
+</section>
+<section id="e4b" data-transition="fade" style="display:flex; flex-direction:column; gap:40px; padding:112px 128px; background:#111111">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:Inter, Arial, sans-serif; font-size:26px; color:#2dd4bf">Etapa 04 · Da baixa para a alta fidelidade</p>
+    <h2 style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:68px; font-weight:700; line-height:1.1; letter-spacing:-2px; color:#f2f2f0">Depois o visual final, ainda no Figma</h2>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:24px; align-items:center">
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <img src="img/fig-lofi-hero.jpg" alt="Topo da loja em baixa fidelidade" style="width:760px; height:451px; border-radius:12px">
+      <p style="font-family:Inter, Arial, sans-serif; font-size:24px; color:#a3a3a0">Baixa fidelidade</p>
+    </div>
+    <svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:64px; height:32px; ;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#2dd4bf"/></svg>
+    <div style="display:flex; flex-direction:column; gap:12px">
+      <img src="img/fig-hifi-hero.jpg" alt="Mesmo topo da loja em alta fidelidade, fundo escuro e cartão" style="width:792px; height:451px; border:1px solid #2e2e2e; border-radius:12px">
+      <p style="font-family:Inter, sans-serif; font-size:24px; color:#a3a3a0">Alta fidelidade</p>
+    </div>
+  </div>
+  <aside>Depois de aprovada a estrutura, a mesma tela ganha o visual final, ainda no Figma: alta fidelidade. A pessoa vê exatamente como vai ficar antes de qualquer linha de código. Ninguém precisa imaginar o resultado.</aside>
+</section>
+<section id="e5" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:48px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:row;justify-content:space-between;align-items:end">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Etapa 05 · Requisitos</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">A tela aprovada vira regra escrita</h2>
+</div>
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">exemplo: subsfor.me</p>
+</div>
+<div style="display:flex;flex-direction:row;gap:28px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">O que o sistema faz · 53</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px"><p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">RF01</p><p style="font-size:28px">Preço em real na vitrine</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px"><p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">RF02</p><p style="font-size:28px">Selo nos 3 mais vendidos</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px"><p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">RF04</p><p style="font-size:28px">4 produtos no celular</p></div>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:24px;color:#a3a3a0">Como precisa ser · 14</p>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px"><i data-lucide="lock" style="color:#7bd88f;width:36px;height:36px"></i><p style="font-size:28px">Nunca recebe o número do cartão</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px"><i data-lucide="lock" style="color:#7bd88f;width:36px;height:36px"></i><p style="font-size:28px">Esconde o custo do fornecedor</p></div>
+<div style="display:flex;flex-direction:row;align-items:center;gap:20px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:14px;padding:22px 26px"><i data-lucide="lock" style="color:#7bd88f;width:36px;height:36px"></i><p style="font-size:28px">Bloqueia após 5 senhas erradas</p></div>
+</div>
+</div>
+<aside>Etapa cinco: cada tela aprovada vira regra escrita. Funcionais, o que o sistema faz, como mostrar o preço em real. E não funcionais, como ele precisa ser, e é aqui que a segurança fica escrita: nunca receber o número do cartão, bloquear depois de cinco senhas erradas. No subsfor.me foram cinquenta e três e catorze. É o exemplo de um projeto: cada um tem a quantidade que precisar.</aside>
+</section>
+<section id="e6" data-transition="fade" style="display:flex; flex-direction:column; gap:44px; padding:112px 128px; background:#111111">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+  <div style="display:flex; flex-direction:row; align-items:end; justify-content:space-between">
+    <div style="display:flex; flex-direction:column; gap:16px">
+      <p style="font-family:Inter, sans-serif; font-size:24px; color:#2dd4bf">Etapa 06 · Arquitetura e ADR</p>
+      <h2 style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:68px; font-weight:700; line-height:1.1; letter-spacing:-2px; color:#f2f2f0">Cada decisão vira um arquivo</h2>
+    </div>
+    <p style="font-family:Inter, sans-serif; font-size:24px; color:#a3a3a0">ADR = registro de decisão</p>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:32px">
+    <div style="width:700px; display:flex; flex-direction:column; gap:12px; padding:32px; background:#1d1d1d; border:1px solid #2e2e2e; border-radius:16px">
+      <p style="font-family:'IBM Plex Mono', 'Courier New', monospace; font-size:24px; color:#a3a3a0">decisoes/</p>
+      <p style="font-family:'IBM Plex Mono', 'Courier New', monospace; font-size:26px; line-height:1.75; color:#e6e6e2">0036-loja-inteira-na-cloudflare.md<br>0037-codigo-no-github.md<br>0038-tres-ambientes.md<br>0040-dominio-subsfor-me.md<br>0152-mais-vendidos-dos-ultimos-7-dias.md<br>0184-card-so-com-dois-estados.md<br><span style="color:#a3a3a0">… 187 no subsfor.me</span></p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:20px; flex:1; padding:40px; background:#f2f2f0; border-radius:16px">
+      <p style="font-family:Inter, sans-serif; font-size:24px; color:#55554f">0036 · em vigor · 22/09/2026</p>
+      <h3 style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:44px; font-weight:700; line-height:1.15; color:#111111">Loja inteira na Cloudflare</h3>
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <p style="font-family:Inter, Arial, sans-serif; font-size:24px; color:#55554f">Decisão</p>
+        <p style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:30px; line-height:1.4; color:#111111">O servidor roda no Workers.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:6px">
+        <p style="font-family:Inter, Arial, sans-serif; font-size:24px; color:#55554f">Por quê</p>
+        <p style="font-family:'IBM Plex Sans', Arial, sans-serif; font-size:30px; line-height:1.4; color:#111111">Servidor tradicional exigiria máquina alugada.</p>
+      </div>
+    </div>
+  </div>
+  <aside>Etapa seis: arquitetura. Aqui entra o ADR, sigla em inglês para registro de decisão de arquitetura. Cada decisão vira um arquivo curto: o que foi decidido, quando e por quê. Esta é a decisão trinta e seis da subsfor.me: a loja inteira na Cloudflare, e o motivo está escrito. Se alguém perguntar daqui a um ano, a resposta está lá. No subsfor.me foram cento e oitenta e sete, mas é o exemplo de um projeto.</aside>
+</section>
+<section id="e79" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:112px 128px;display:flex;flex-direction:column;gap:56px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">Etapas 07 a 09 · Código, testes e entrega</p>
+<h2 style="font-size:68px;font-weight:700;line-height:1.1;letter-spacing:-2px">Toda mudança passa por 3 conferências</h2>
+</div>
+<div style="display:flex;flex-direction:row;align-items:stretch;gap:16px">
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px 16px"><i data-lucide="code" style="color:#2dd4bf;width:56px;height:56px"></i><p style="font-size:30px;font-weight:600;text-align:center">Agente escreve</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;align-self:center;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px 16px"><i data-lucide="wrench" style="color:#7bd88f;width:56px;height:56px"></i><p style="font-size:30px;font-weight:600;text-align:center">Build</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;align-self:center;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px 16px"><i data-lucide="key-round" style="color:#7bd88f;width:56px;height:56px"></i><p style="font-size:30px;font-weight:600;text-align:center">Busca senha vazada</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;align-self:center;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#1d1d1d;border:1px solid #2e2e2e;border-radius:16px;padding:36px 16px"><i data-lucide="search" style="color:#7bd88f;width:56px;height:56px"></i><p style="font-size:30px;font-weight:600;text-align:center">Revisão por IA</p></div>
+<svg viewBox="0 0 64 32" preserveAspectRatio="none" style="width:40px;height:20px;align-self:center;flex-shrink:0"><path d="M0 11h44V0l20 16-20 16V21H0z" fill="#4a4a46"/></svg>
+<div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:#f2f2f0;color:#111111;border-radius:16px;padding:36px 16px"><i data-lucide="badge-check" style="color:#111111;width:56px;height:56px"></i><p style="font-size:30px;font-weight:600;text-align:center">Pessoa aprova</p></div>
+</div>
+<p style="font-size:30px;color:#a3a3a0">Se uma conferência falhar, a mudança não entra no sistema.</p>
+<aside>Só nas etapas sete a nove os agentes escrevem código. E toda mudança passa por três conferências automáticas: o build, uma busca por senha vazada no código e uma revisão por IA. Se uma falhar, a mudança não entra. No fim, a pessoa testa a versão no ar e aprova.</aside>
+</section>
+<section id="prova" data-transition="fade" style="background:#08080a;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:row;align-items:center;gap:80px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:32px">
+<p style="font-family:Inter, Arial, sans-serif;font-size:26px;color:#2dd4bf">A prova</p>
+<h2 style="font-size:80px;font-weight:700;line-height:1.05;letter-spacing:-2px">subsfor.me: construído pela esteira, já no ar</h2>
+<p style="font-family:Inter, Arial, sans-serif;font-size:28px;color:#c9c9c4">dev.subsfor.me</p>
+</div>
+<img src="img/cartao.gif" alt="Cartão holográfico da subsfor.me pulsando com brilho holográfico" style="width:780px;height:630px;object-fit:cover;border-radius:16px">
+<aside>A prova de que funciona é a subsfor.me, um SaaS construído inteiro pela esteira, com Cloudflare, Supabase e Stripe, e já publicado. O cartão holográfico é o mesmo que estava no wireframe em alta fidelidade. Agent Engineer: software de qualidade e seguro, para quem não é engenheiro.</aside>
+</section>
+<section id="qr" data-transition="fade" style="background:#111111;color:#f2f2f0;font-family:'IBM Plex Sans', Arial, sans-serif;padding:72px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px">
+<div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:radial-gradient(circle at 85% 0%, rgba(45,212,191,0.10) 0%, rgba(17,17,17,0) 55%)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div><div style="position:absolute;left:0;top:0;width:1920px;height:1080px;background:repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, rgba(255,255,255,0) 1px, rgba(255,255,255,0) 48px)"></div>
+<p style="font-size:40px;font-weight:700;text-align:center">Aponte a câmera e veja a esteira</p>
+<img src="img/qr-ae.png" alt="QR Code para github.com/duribeiro/project-template" style="width:720px;height:720px;object-fit:contain;border-radius:16px;background:#ffffff">
+<p style="font-family:Inter, Arial, sans-serif;font-size:30px;color:#c9c9c4;text-align:center">github.com/duribeiro/project-template</p>
+<aside>Apontem a câmera: o QR Code abre a esteira no GitHub, com as nove etapas e o roteiro de cada uma. É aberta, qualquer pessoa pode usar no próprio projeto. Obrigado.</aside>
+</section>
+</div></div><div id="bar"><span id="n"></span><a href="slides.pdf">PDF</a></div><script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script><script>const S = [...document.querySelectorAll('.deck section')];
+let i = Math.max(0, Math.min(S.length - 1, (parseInt(location.hash.slice(1)) || 1) - 1));
+function go(n) {
+  i = Math.max(0, Math.min(S.length - 1, n));
+  S.forEach((s, k) => s.classList.toggle('on', k === i));
+  history.replaceState(null, '', '#' + (i + 1));
+  document.getElementById('n').textContent = (i + 1) + ' / ' + S.length;
+}
+function fit() {
+  const k = Math.min(innerWidth / 1920, innerHeight / 1080);
+  document.querySelector('.deck').style.transform = 'scale(' + k + ')';
+}
+addEventListener('resize', fit); fit(); go(i);
+addEventListener('keydown', e => {
+  if (['ArrowRight', 'ArrowDown', 'PageDown', ' ', 'Enter'].includes(e.key)) { e.preventDefault(); go(i + 1); }
+  else if (['ArrowLeft', 'ArrowUp', 'PageUp', 'Backspace'].includes(e.key)) { e.preventDefault(); go(i - 1); }
+  else if (e.key === 'Home') go(0);
+  else if (e.key === 'End') go(S.length - 1);
+  else if (e.key === 'f' || e.key === 'F') { document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen(); }
+});
+document.getElementById('stage').addEventListener('click', e => go(e.clientX > innerWidth / 3 ? i + 1 : i - 1));
+if (window.lucide) lucide.createIcons();
+</script></body></html>
