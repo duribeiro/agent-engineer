@@ -76,3 +76,7 @@ Todo projeto nasce na versão **0.0.1**, seguindo o versionamento semântico des
 - A pasta `.claude/skills/adr/scripts` e os comandos do OpenSpec vêm de outro projeto e funcionam sem alteração. A varredura de segredo usa o CLI do Infisical, que baixa pela internet a cada execução.
 - O `ci.yml` usa `npm install` e roda `lint`, `test`, `typecheck` e `build` só se existirem no `package.json`. Ao criar o primeiro lockfile, troque para `npm ci`.
 - Nenhuma tecnologia de aplicação vem decidida. Linguagem, banco e hospedagem saem da etapa 6.
+
+## Presentation
+
+Pitch deck from Semana da Tecnologia UNASP 2026: [online](https://ribeiroedu.com/semana-tech/ae/) · [PDF](presentation/slides.pdf) · [source](presentation/index.html)
